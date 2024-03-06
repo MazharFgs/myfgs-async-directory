@@ -21,12 +21,12 @@ const PeopleDirectory = ({activeTab}) => {
     //     // 👇️ scroll to top on page load
     //     // window.scrollTo({left: activeTab, behavior: 'smooth'});
     // }, [activeTab]);
-    const scrollTo = () => {
-        scroll.scrollTo(1000); // Scrolling to 100px from the top of the page.
-      };
-    useEffect(()=>{
-        scrollTo();
-      }, [])
+    // const scrollTo = () => {
+    //     scroll.scrollTo(1000); // Scrolling to 100px from the top of the page.
+    //   };
+    // useEffect(()=>{
+    //     scrollTo();
+    //   }, [])
   
     const fetchPeopleDirectoy = () => {
         console.log("fetchPeopleDirectoy")
