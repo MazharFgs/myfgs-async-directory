@@ -15,12 +15,12 @@ const PeopleDirectory = ({activeTab}) => {
     const [nextOffset, setNextOffset] = useState(0)
     const [totalCount, setTotalCount] = useState(0);
 
-    useEffect(() => {
-        console.log("I am fom user effect", activeTab)
+    // useEffect(() => {
+    //     console.log("I am fom user effect", activeTab)
 
-        // 👇️ scroll to top on page load
-        // window.scrollTo({left: activeTab, behavior: 'smooth'});
-    }, [activeTab]);
+    //     // 👇️ scroll to top on page load
+    //     // window.scrollTo({left: activeTab, behavior: 'smooth'});
+    // }, [activeTab]);
     const scrollTo = () => {
         scroll.scrollTo(1000); // Scrolling to 100px from the top of the page.
       };
@@ -62,7 +62,7 @@ const PeopleDirectory = ({activeTab}) => {
     return (
         <>
 
-        <div style={{height: 450}}>
+        <div>
 
        
           <InfiniteScroll
