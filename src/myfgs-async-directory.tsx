@@ -15,9 +15,9 @@ import React, { ReactElement, useEffect, useState } from "react";
 import { BlockAttributes, WidgetApi} from "widget-sdk";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import PeopleDirectory from "../src/form-controls/peopleDevelopment/people-directory";
 import axios from "axios";
 import { apiUrl  } from "./constants";
+import SimpleDirectory from "./form-controls/peopleDevelopment/simple-directory"
 
 export interface MyfgsAsyncDirectoryProps extends BlockAttributes {
   widgetApi: WidgetApi;
@@ -136,7 +136,7 @@ export const MyfgsAsyncDirectory = ({widgetApi} : MyfgsAsyncDirectoryProps): Rea
 
             <TabPanel>
             <div>
-              <PeopleDirectory activeTab={activeTab} />
+              <SimpleDirectory />
             </div>
 
 
